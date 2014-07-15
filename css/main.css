@@ -1,0 +1,15 @@
+body {
+	background-image: url('../images/background.jpg');
+}
+
+h1 {
+	text-align: center;
+}
+
+#instructions-container {
+	text-align: center;
+}
+
+#list-container {
+	text-align: center;
+}
