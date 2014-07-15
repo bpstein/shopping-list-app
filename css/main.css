@@ -1,9 +1,38 @@
+#header {
+	height: 120px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+	top:0;
+}
+
 body {
 	background-image: url('../images/background.jpg');
 }
 
 h1 {
 	text-align: center;
+	font-family: 'Nunito', Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: #FFD;
+	padding: 32px 0 32px 0;	
+	font-weight: bold;
+}
+
+#list-header {
+	font-family: 'Indie Flower', Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin-top: 35px;
+	text-align: center;
+}
+
+ul, li {
+	font-family: 'Indie Flower', Helvetica, sans-serif;
+	text-align: left;
+	margin-left: 45px;
+	margin-top: 24.5px;
+	font-size: 1.41em;
 }
 
 #instructions-container {
