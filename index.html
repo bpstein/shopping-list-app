@@ -6,43 +6,58 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Nunito' rel='stylesheet' type='text/css'>	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Nunito|Crafty+Girls' rel='stylesheet' type='text/css'>	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
-	
-	<div class="col-span-12" id="header">
-		<h1>Shopping List App</h1>
-	</div>
 
 	<div id="container" class="row">
 		<div class="col-span-12"></div>
 		<div class="col-span-1"></div>
 		<div id="instructions-container" class="col-span-5">
-			<h2>Instructions for Use</h2>
-			<div id="pin">
+			<div id="heading-section">
+				<h1>Shopping List App</h1>
 			</div>
-		</div>
-		<div class="col-span-1"></div>
-		<div id="list-container" class="col-span-4">
-			<h2 id="list-header">Shopping List</h2>
-			<ul>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				<li>List item</li>
-				
-			</ul>
+			<div id="instructions-section">
+				<h2>Instructions for Use</h2>
+					<div id="instructions">
+						<ol>
+							<li>Type an item in the form:</li>
+							<li>Press "enter"</li>
+							<li>Delete unwanted items by clicking the red cross.</li>
+							<li>Click "FINISHED!" when done.</li>
+						</ol>
+					</div>
+			</div>
+
 			
 		</div>
 		<div class="col-span-1"></div>
+			<div id="list-container" class="col-span-4">
+				<h3 id="list-header">Shopping List</h3>
+					<div id="list">
+						<ul>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>	
+						</ul>
+					</div>
+			</div>
+		<div class="col-span-1"></div>
+	</div>
+
+	<div id="postit">
+		<div class="scribble">
+			<p id="scribble-text">To-do list and doodles</p>
+		</div>
 	</div>
 </body>
 </html>
