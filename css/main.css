@@ -1,29 +1,147 @@
+/****************
+HEADER
+****************/
+
 #header {
-	height: 85px;
+	height: 55px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	position: relative;
-	top:0;
+	top: 0;
+	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
+	color: #fff;
+	z-index: 6;
 }
+
+#header-text h1 {
+	text-align: right;
+	font-size: 1.4em;
+	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-left: 10px;
+	color: #fff;
+	margin-top: -30px;
+}
+
+h1 {
+	text-align: left;
+	font-size: 2.0em;
+	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #ecf0f1;
+	font-weight: bold;
+	z-index: 5;
+	position: relative;
+}
+
+
+
+/***************
+BACKGROUND
+***************/
 
 body {
 	background-image: url('../images/background.jpg');
 }
 
-h1, h2 {
-	text-align: center;
-	font-family: 'Nunito', Helvetica, sans-serif;
-	color: #000;
-	padding: 32px 0 20px 0;	
-}
 
-h1 {
-	font-size: 2.5em;
-	font-weight: bold;
-}
+
+/**************
+INSTRUCTIONS
+**************/
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.7em;
+	padding: 32px 0 50px 0;	
+	font-weight: bold;
+	font-family: 'Arvo', 'Georgia' Helvetica, sans-serif;
+	color: #000;
+}
+
+#instructions-container {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 2.5%;
+}
+
+#heading-section {
+	padding: 15px;
+	margin: 20px 20px 10px 20px;
+	background-color: #2980b9;
+	border-radius: 2.5%;
+}
+
+#instructions-header {
+	font-family: 'Arvo', 'Georgia' Helvetica, sans-serif;
+	color: #000;
+	padding: 10px 0 20px 0;
+	background-color: #2980b9;
+	height: 45px;
+	vertical-align: center;
+}
+
+#instructions-header h2 {
+	padding: 20px 0 25px 0;
+	color: white;
+	vertical-align: center;
+}
+
+#instructions-section {
+	font-family: 'Arvo', Helvetica, sans-serif;
+	font-size: 0.8em;
+	padding: 0px;
+	margin: 0;
+	background-color: #ecf0f1;
+	height: 400px;
+	z-index: -2;
+	border-radius: 2.5%;
+}
+
+#instructions {
+	margin-left: 20px;
+	max-width: 400px;
+	padding: 5px 5px 15px 5px;
+}
+
+#instructions li {
+	text-align: left;
+	list-style: inherit;
+	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
+	font-size: 1.2em;
+	padding: 15px 15px 15px 5px;
+	margin-left: 10px;
+	background-color: #ecf0f1;
+	border-radius: 3%;
+	z-index: -3;
+	list-style-type: decimal;
+}
+
+form {
+	padding-top: 5px;
+	height: 15px;
+	}
+
+#cross {
+	color: red;
+}
+
+
+/**************
+SHOPPING LIST
+**************/
+
+#list-container {
+	z-index: -1;
+	position: relative;
+	-webkit-transform: rotate(5deg);
+  	-moz-transform: rotate(5deg);
+ 	-ms-transform: rotate(5deg);
+ 	-o-transform: rotate(5deg);
+  	-webkit-transition: -webkit-transform 1.5s ease-in;
+  	-moz-transition: -webkit-transform 1.5s ease-in;
+  	-ms-transition: -webkit-transform 1.5s ease-in;
+  	-o-transition: -webkit-transform 1.5s ease-in;
 }
 
 #list-header {
@@ -41,47 +159,11 @@ h2 {
 	margin-top: 24.5px;
 	margin-bottom: 6px;
 	font-size: 1.8em;
+	height: 450px;
 	text-indent: 20px;
 	z-index: 4;
 	display: block;
-}
-
-#instructions-container {
-	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 50px;
-	background-color: rgba(58, 58, 58, 0.8);
-	border-radius: 0%;
-}
-
-#heading-section {
-	padding: 15px;
-	margin: 20px 20px 10px 20px;
-	background-color:#F2F0F0;
-}
-#instructions-section {
-	font-family: 'Nunito', Helvetica, sans-serif;
-	font-size: 1.5em;
-	padding: 0px;
-	font-size: 1.4em;
-	margin: 0 20px 20px 20px;
-	background-color:#F2F0F0;
-	height: 400px;
-	z-index: -2;
-}
-
-#instructions li {
-	text-align: left;
-	list-style: inherit;
-	font-family: 'Nunito', Helvetica, sans-serif;
-	font-size: 1.2em;
-	margin-left: 20px;
-	max-width: 434px;
-	margin-bottom: 10px;
-	padding: 5px 5px 15px 5px;
-	background-color: #D6D4D4;
-	border-radius: 3%;
-	z-index: -3;
+	height: 480px;
 }
 
 #list-container {
@@ -93,24 +175,43 @@ h2 {
 	display: block;
 }
 
+
+
+/**************
+POST IT
+**************/
+
 #postit {
 	background-image: url('../images/postit.jpg');
 	display: block;
 	right: 0;
-	margin-top: -520px;
+	margin-top: -320px;
 	margin-left: 970px;
 	height: 250px;
 	width: 250px;
 	z-index: 5;
 	position: relative;
-	
+
+	-webkit-transform: rotate(-5deg);
+  	-moz-transform: rotate(-5deg);
+ 	-ms-transform: rotate(-5deg);
+ 	-o-transform: rotate(-5deg);
+  	-webkit-transition: -webkit-transform 1.5s ease-in;
+  	-moz-transition: -webkit-transform 1.5s ease-in;
+  	-ms-transition: -webkit-transform 1.5s ease-in;
+  	-o-transition: -webkit-transform 1.5s ease-in;
 }
 
 .scribble {
 	font-family: 'Crafty Girls','Indie Flower', sans-serif;
 	color: #F50707;
 	font-weight: bold;
+	font-size: 1.1em;
 	text-align: center;
 	padding-left: 10px;
 	padding-top: 15px;
+}
+
+.pin {
+	height: 20px;
 }
