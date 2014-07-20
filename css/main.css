@@ -24,6 +24,7 @@ HEADER
 
 h1 {
 	text-align: left;
+	margin-left: 100px;
 	font-size: 2.0em;
 	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
 	padding-top: 10px;
@@ -164,6 +165,10 @@ SHOPPING LIST
 	z-index: 4;
 	display: block;
 	height: 480px;
+}
+
+.unchecked {
+	text-decoration: line-through;
 }
 
 #list-container {
