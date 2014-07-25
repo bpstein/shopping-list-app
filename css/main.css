@@ -127,6 +127,11 @@ form {
 	height: 15px;
 	}
 
+button {
+	width: 80px;
+	height: 20px;
+}
+
 #cross {
 	color: red;
 }
@@ -185,7 +190,7 @@ SHOPPING LIST
 
 .unchecked {
 	text-decoration: none;
-	display: none;
+	display: block;
 }
 
 
