@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// Add item in form, then click "submit" to add item to list
 	$('#instructions').on('click', '.button', function() {	
-		$("#list").append("text")
+		addItem();
     });
 
     // $('#submit').on('click','input[name="add"]', function() {
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	//User "enter" keystroke to submit item to list
 	$('body').on('keydown','#item', function(event) {
       if( event.which == 13) {
-		 $("#list").append("text");
+		 addItem();
       }
   	});
 
@@ -39,6 +39,11 @@ $(document).ready(function() {
 	// function addItem(){
 	// 	$('ul').append('#item').val("");
 	// }
+
+
+	function addItem(){
+		$("#list").append("text")
+	}
 
 });
 
