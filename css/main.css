@@ -136,6 +136,10 @@ button {
 	color: red;
 }
 
+#check {
+	color: green;
+}
+
 
 /**************
 SHOPPING LIST
@@ -195,6 +199,15 @@ SHOPPING LIST
 
 
 .cross {
+	background-image: url('../images/cross.png');
+	margin-top: 0.5px;
+	padding-left: 15px;
+	height: 22px;
+	width: auto;
+}
+
+.check {
+	background-image: url('../images/check.png');
 	margin-top: 0.5px;
 	padding-left: 15px;
 	height: 22px;
@@ -237,6 +250,11 @@ POST IT
 	padding-left: 10px;
 	padding-top: 15px;
 	z-index: 2;
+}
+
+#scribble-text {
+	z-index: 3;
+	position: relative;
 }
 
 .pin {

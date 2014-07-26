@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div id="header">
-		<span><h1>Shopping List App</h1></span>
+		<h1>Shopping List App</h1>
 	</div>
 	<div id="container" class="row">
 		<div class="col-span-12"></div>
@@ -25,11 +25,11 @@
 					<div id="instructions">
 						<ol>
 							<li>Type an item here: 
-							<form action="post" method="index.html">
-									<input type="text" id="item" value="Enter item here"><button id="submit">Submit</button></li>
+								<input type="text" id="item" value="Enter item here">
+								<input class="button" type="button" name="submit" value="add" id="submit"></li>
 							<li>Press "enter".</li>
 							<li>Delete unwanted items by clicking the <span id="cross">red cross</span>.</li>
-							<li>Click "FINISHED!" when done.</li>
+							<li>Check off items by clicking the <span id="check">green checkmark</span>.</li>
 						</ol>
 					</div>
 			</div>
@@ -39,13 +39,9 @@
 		<div class="col-span-1"></div>
 			<div id="list-container" class="col-span-5">
 				<h3 id="list-header">Shopping List</h3>
-					<div id="list">
-						<ul>
-							<li class="unchecked">List item<img class="cross" src="images/check.png"><img class="cross" src="images/cross.png"></li>
-							<li class="unchecked">List item test test<img class="cross" src="images/check.png"><img class="cross" src="images/cross.png"></li>
-							<li class="unchecked">List item<img class="cross" src="images/check.png"><img class="cross" src="images/cross.png"></li>
-							<li class="checked">List item<img class="cross" src="images/check.png"><img class="cross" src="images/cross.png"></li>
-							<li class="checked">List item<img class="cross" src="images/check.png"><img class="cross" src="images/cross.png"></li>	
+					<div>
+						<ul id="list">
+							
 						</ul>
 					</div>
 			</div>
