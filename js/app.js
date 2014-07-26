@@ -10,11 +10,11 @@ $(document).ready(function() {
     // });
 
 	//User "enter" keystroke to submit item to list
-	// $('body').on('keydown','#item', function(event) {
- //      if( event.which == 13) {
-	// 	addItem();
- //      }
- //  	});
+	$('body').on('keydown','#item', function(event) {
+      if( event.which == 13) {
+		 $("#list").append("text");
+      }
+  	});
 
 	//Click "x" to remove item from list
 	// $('body').on('click','.cross',function() {
