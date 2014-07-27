@@ -182,14 +182,13 @@ SHOPPING LIST
 	font-size: 1.8em;
 	height: 450px;
 	text-indent: 20px;
-	z-index: 4;
 	display: block;
 	height: 480px;
 }
 
 .checked {
 	text-decoration: line-through;
-	display: none;
+	display: block;
 }
 
 .unchecked {
@@ -198,20 +197,25 @@ SHOPPING LIST
 }
 
 
-.cross {
-	background-image: url('../images/cross.png');
+.crossBtn {
+	background-image: url('/images/cross.png');
+	background-repeat: no-repeat;
 	margin-top: 0.5px;
 	padding-left: 15px;
 	height: 22px;
 	width: auto;
+	cursor: pointer;
 }
 
-.check {
-	background-image: url('../images/check.png');
+.checkBtn {
+	background-image: url('/images.check.png');
+	background-repeat: no-repeat;
+	display: inline;
 	margin-top: 0.5px;
 	padding-left: 15px;
 	height: 22px;
 	width: auto;
+	cursor: pointer;
 }
 
 
@@ -241,6 +245,11 @@ POST IT
   	-o-transition: -webkit-transform 1.5s ease-in;
 }
 
+.draw {
+	height: 250px;
+	width: 250px;
+}
+
 .scribble {
 	font-family: 'Crafty Girls','Indie Flower', sans-serif;
 	color: #F50707;
@@ -250,13 +259,4 @@ POST IT
 	padding-left: 10px;
 	padding-top: 15px;
 	z-index: 2;
-}
-
-#scribble-text {
-	z-index: 3;
-	position: relative;
-}
-
-.pin {
-	height: 20px;
 }

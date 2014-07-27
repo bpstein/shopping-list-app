@@ -5,10 +5,6 @@ $(document).ready(function() {
 		addItem();
     });
 
-    // $('#submit').on('click','input[name="add"]', function() {
-    //   addItem();
-    // });
-
 	//User "enter" keystroke to submit item to list
 	$('body').on('keydown','#item', function(event) {
       if( event.which == 13) {
@@ -17,37 +13,49 @@ $(document).ready(function() {
   	});
 
 	//Click "x" to remove item from list
-	// $('body').on('click','.cross',function() {
- //        $(this).closest("li").remove();
- //   	});
+	$('crossBtn').click(function(){
+        $(this).closest('li').remove();
+   	});
 
-	//Click "check" to convert item to line-through state
-	// $('#list-container').on('click', '.check', function() {
- //        $(this).closest("li").css("text-decoration", "line-through");
- //    });
-
-	// function addItem(){
- //        $('ul').append('<li>'+$('#item').val()+'<button class="check"></button><button class="cross"></button></li>');
- //    	}
+	//Click "check" to check item off the list 
+	$('checkBtn').click(function(){
+		$(this).closest('li').css('text-decoration', 'line-through');
+	})
 
 	//Add post-it note functionality 
+	var $canvas = $("canvas");
+	var lastEvent; 
+	var mousedown = false;
+
+	$canvas.mousedown(function(e){
+		lastEvent = e;
+		mousedown = true;
+	})
+	.mousemove(function(e){
+		//Draw lines
+		var context = $('canvas')[0].getContext('2d');
 	
-	// $('#instruction').on('click', 'button', function (){
-	// 		alert("test");
-	// });
+		if(mousedown) {
+			context.beginPath();
+			context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
+			context.lineTo(e.offsetX, e.offsetY);
+			context.strokeStyle = "red";
+			context.stroke();
+			lastEvent = e;
+		}
+	})
 
-	// function addItem(){
-	// 	$('ul').append('#item').val("");
-	// }
+	.mouseup(function(){
+		mousedown = false;
+	})
 
 
-	function addItem(){
-		$("#list").append("text")
-	}
 
+    function addItem(){	
+    	var listItem = '<li>' + $('#item').val() + '<button class="checkBtn"></button>' + '<button class="crossBtn"></button>' + '</li>';
+    	$('ul').append(listItem);
+    }
 });
-
-
 
 
 
