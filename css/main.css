@@ -9,7 +9,7 @@ HEADER
 	top: 0;
 	font-family: 'Arvo', 'Georgia', Helvetica, sans-serif;
 	color: #fff;
-	z-index: 6;
+	z-index: 3;
 	position: fixed;
 }
 
@@ -32,7 +32,7 @@ h1 {
 	padding-left: 10px;
 	color: #ecf0f1;
 	font-weight: bold;
-	z-index: 5;
+	z-index: 2;
 	position: relative;
 }
 
@@ -147,9 +147,7 @@ SHOPPING LIST
 	margin-left: 405px;
 	margin-bottom: 50px;
 	background-image: url('../images/list.jpg');
-	z-index: 4;
 	display: block;
-	z-index: -1;
 	position: relative;
 	-webkit-transform: rotate(5deg);
   	-moz-transform: rotate(5deg);
@@ -194,8 +192,7 @@ SHOPPING LIST
 
 
 .crossBtn {
-	background-image: url('/images/cross.png');
-	background-repeat: no-repeat;
+	display: inline-block;
 	margin-top: 0.5px;
 	padding-left: 15px;
 	height: 22px;
@@ -204,9 +201,7 @@ SHOPPING LIST
 }
 
 .checkBtn {
-	background-image: url('/images.check.png');
-	background-repeat: no-repeat;
-	display: inline;
+	display: inline-block;
 	margin-top: 0.5px;
 	padding-left: 15px;
 	height: 22px;
@@ -228,7 +223,6 @@ POST IT
 	margin-left: 970px;
 	height: 250px;
 	width: 250px;
-	z-index: 3;
 	position: relative;
 
 	-webkit-transform: rotate(-5deg);
@@ -250,9 +244,7 @@ POST IT
 	font-family: 'Crafty Girls','Indie Flower', sans-serif;
 	color: #F50707;
 	font-weight: bold;
-	font-size: 1.1em;
 	text-align: center;
 	padding-left: 10px;
 	padding-top: 15px;
-	z-index: 2;
 }

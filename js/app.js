@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	//cached variables (drawing app)
+	var $canvas = $("canvas");
+	var lastEvent; 
+	var mousedown = false;
+	var context = $('canvas')[0].getContext('2d');
+
 	// Add item in form, then click "submit" to add item to list
 	$('#instructions').on('click', '.button', function() {	
 		addItem();
@@ -13,28 +19,22 @@ $(document).ready(function() {
   	});
 
 	//Click "x" to remove item from list
-	$('crossBtn').click(function(){
+	$('.crossBtn').click(function(){
         $(this).closest('li').remove();
    	});
 
 	//Click "check" to check item off the list 
-	$('checkBtn').click(function(){
+	$('.checkBtn').click(function(){
 		$(this).closest('li').css('text-decoration', 'line-through');
 	})
 
 	//Add post-it note functionality 
-	var $canvas = $("canvas");
-	var lastEvent; 
-	var mousedown = false;
-
 	$canvas.mousedown(function(e){
 		lastEvent = e;
 		mousedown = true;
 	})
 	.mousemove(function(e){
 		//Draw lines
-		var context = $('canvas')[0].getContext('2d');
-	
 		if(mousedown) {
 			context.beginPath();
 			context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
@@ -49,10 +49,8 @@ $(document).ready(function() {
 		mousedown = false;
 	})
 
-
-
     function addItem(){	
-    	var listItem = '<li>' + $('#item').val() + '<button class="checkBtn"></button>' + '<button class="crossBtn"></button>' + '</li>';
+    	var listItem = '<li>' + $('#item').val() + '<img class="checkBtn" src="images/check.png">' + '<img class="crossBtn" src="images/cross.png">' + '</li>';
     	$('ul').append(listItem);
     }
 });
