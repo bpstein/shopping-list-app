@@ -51,10 +51,9 @@ $(document).ready(function() {
 
     function addItem(){	
     	var listItem = '<li>' + $('#item').val() + '<img class="checkBtn" src="images/check.png">' + '<img class="crossBtn" src="images/cross.png">' + '</li>';
-    	$('ul').append(listItem);
+    	$('#list').append(listItem);
     }
 });
-
 
 
 
