@@ -20,13 +20,11 @@ $(document).ready(function() {
 
 	//Click "x" to remove item from list
 	$('#list').on('click','.crossBtn', function(){
-        $(this).closest('.listItem').remove()
         $(this).closest('li').remove();
    	});
 
 	//Click "check" to check item off the list 
 	$('#list').on('click', '.checkBtn', function(){
-		$(this).closest('listItem').css('text-decoration', 'line-through');
 		$(this).closest('li').css('text-decoration', 'line-through')
 	})
 
