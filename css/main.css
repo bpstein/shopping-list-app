@@ -43,7 +43,7 @@ BACKGROUND
 ***************/
 
 body {
-	background-image: url('../images/background.jpg');
+	background-image: url('../images/wood-background.jpg');
 	background-size: 1000px;
 }
 
@@ -142,21 +142,21 @@ SHOPPING LIST
 **************/
 
 #list-container {
-	text-align: center;
-	margin-top: 95px;
+	text-align: right;
+	margin-top: 85px;
 	margin-left: 405px;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	background-image: url('../images/list.jpg');
 	display: block;
 	position: relative;
-	-webkit-transform: rotate(5deg);
+	/*-webkit-transform: rotate(5deg);
   	-moz-transform: rotate(5deg);
  	-ms-transform: rotate(5deg);
  	-o-transform: rotate(5deg);
   	-webkit-transition: -webkit-transform 1.5s ease-in;
   	-moz-transition: -webkit-transform 1.5s ease-in;
   	-ms-transition: -webkit-transform 1.5s ease-in;
-  	-o-transition: -webkit-transform 1.5s ease-in;
+  	-o-transition: -webkit-transform 1.5s ease-in;*/
 }
 
 #list-header {
@@ -182,12 +182,10 @@ SHOPPING LIST
 
 .checked {
 	text-decoration: line-through;
-	display: block;
 }
 
 .unchecked {
 	text-decoration: none;
-	display: block;
 }
 
 
@@ -220,7 +218,7 @@ POST IT
 	display: block;
 	right: 0;
 	margin-top: -320px;
-	margin-left: 970px;
+	margin-left: 950px;
 	height: 250px;
 	width: 250px;
 	position: relative;
@@ -246,8 +244,5 @@ POST IT
 	color: #F50707;
 	font-weight: bold;
 	text-align: center;
-	padding-left: 10px;
-	padding-top: 15px;
-	margin-left: 25px;
 	margin-top: -250px;	
 }
